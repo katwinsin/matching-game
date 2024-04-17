@@ -195,8 +195,8 @@ function onCardFlipped(newlyFlippedCard) {
   /* Step 4: Now we have two matching cards. Increment the match counter and optionally add a "glow" effect to the matching cards. */
 
   incrementCounter("matches", document.getElementById("match-count"));
-  lastCardFlipped.element.classList.add("glow-border");
-  newlyFlippedCard.element.classList.add("glow-borde");
+  lastCardFlipped.element.classList.add("border-glow");
+  newlyFlippedCard.element.classList.add("border-glow");
 
 if (counters.matches === 6) {
   winAudio.play();
